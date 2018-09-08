@@ -17,11 +17,9 @@ export class AvisosComponent implements OnInit {
         switch (msj.contenido) {
           case 'inicio':
             this.muestraAviso('Marca inicial');
-            console.log('Se ha recibido la marca inicial de tiempo');
             break;
           case 'fin':
-          this.muestraAviso('Marca final');
-            console.log('Se ha recibido la marca final de tiempo');
+            this.muestraAviso('Marca final');
             break;
         }
       }
