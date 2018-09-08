@@ -1,0 +1,13 @@
+.container {
+  width: 500px;
+  height: 300px;
+  margin: 100px auto 0;
+  display: flex;
+}
+msjs-temporizador, msjs-avisos {
+  border: 2px solid #060;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
