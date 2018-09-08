@@ -43,6 +43,7 @@
     "protractor": "~5.4.0",
     "ts-node": "~5.0.1",
     "tslint": "~5.9.1",
+    "typeface-montserrat": "0.0.54",
     "typescript": "~2.7.2"
   }
 }
