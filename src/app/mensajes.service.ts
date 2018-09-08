@@ -3,7 +3,7 @@ import { BehaviorSubject, Observable } from 'rxjs'; // Tenemos que importar los 
 import { filter } from 'rxjs/operators'; // Tenemos que importar el operador filter de la librería RxJS
 
 // Interfaz para la forma del objeto mensaje
-interface Mensaje {
+export interface Mensaje {
   tema: string;
   contenido: string;
 }
