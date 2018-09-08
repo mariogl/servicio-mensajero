@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
-import { BehaviorSubject } from 'rxjs'; // Tenemos que importar el objeto BehaviorSubject de la librería RxJS
+import { BehaviorSubject, Observable } from 'rxjs'; // Tenemos que importar los observables de la librería RxJS
+import { filter } from 'rxjs/operators'; // Tenemos que importar el operador filter de la librería RxJS
 
 // Interfaz para la forma del objeto mensaje
 interface Mensaje {
@@ -19,8 +20,10 @@ export class MensajesService {
 	constructor() { }
 
 	// Método público para quien se quiera suscribir a los mensajes
-	public escucha(): Observable&lt;Mensaje&gt; {
-		return this.mensajero.asObservable();
+	public escucha(tema: string): Observable<Mensaje> {
+		return this.mensajero.asObservable().pipe(
+      filter(msj => msj.tema === tema)
+    );
 	}
 
 	// Método público para quien quiera emitir un mensaje
