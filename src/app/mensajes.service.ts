@@ -28,6 +28,6 @@ export class MensajesService {
 
   // Método público para quien quiera emitir un mensaje
   public emite(msj: Mensaje): void {
-    this.mensajero.next(msj);
+    setTimeout(() => this.mensajero.next(msj));  // setTimeout para que se ejecute después del ciclo de detección de cambios
   }
 }
