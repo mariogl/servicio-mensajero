@@ -5,9 +5,12 @@
   display: flex;
 }
 msjs-temporizador, msjs-avisos {
-  border: 2px solid #060;
+  border: 2px solid #999;
   flex: 1;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+msjs-avisos {
+  border-left: none;
 }
