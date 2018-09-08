@@ -1,0 +1,8 @@
+button {
+  background: none;
+  border: 3px dashed #666;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 100px;
+  cursor: pointer;
+}
